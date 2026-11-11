@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hun">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,44 @@
     </title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Priority</th>
-                <th>MAC</th>
-                <th>Enabled</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% rules.forEach(rule => { %>
+<body>
+    <div class="container">
+        <form method="post">
+            <h2>Új szabály</h2>
+            <input type="number" name="priority" placeholder="priority">
+            <input type="text" name="mac" placeholder="mac">
+            <input type="number" name="enabled" placeholder="enabled"> <br><br>
+            <button>Add</button>
+        </form>
+
+        <br>
+
+        <table>
+            <thead>
                 <tr>
-                    <td><%= rule.priority %></td>
-                    <td><%= rule.mac %></td>
-                    <td><%= rule.enabled %></td>                    
+                    <th>Priority</th>
+                    <th>MAC</th>
+                    <th>Enabled</th>
                 </tr>
-            <% }); %>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <% rules.forEach(rule=> { %>
+                    <tr>
+                        <td>
+                            <%= rule.priority %>
+                        </td>
+                        <td>
+                            <%= rule.mac %>
+                        </td>
+                        <td>
+                            <%= rule.enabled %>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
