@@ -23,5 +23,25 @@
         <% } %>
         <button type="submit">Módosítás</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Priority</th>
+                <th>MAC</th>
+                <th>Enabled</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% rules.array.forEach(rule => { %>
+                <tr><% rule.id %></tr>
+                <tr><% rule.priority %></tr>
+                <tr><% rule.mac %></tr>
+                <tr><% rule.enabled %></tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+
 </body>
 </html>
