@@ -16,16 +16,4 @@ export class AppController {
     }
   }
 
-  // @Post('/')
-  // @Render('index')
-  // editProfile(@Body() body: EditProfileDto) {
-  //   const userRegex = /^[a-z][a-z\d]*$/;
-  //   if (!userRegex.test(body.username)) {
-  //     return {
-  //       error: "Invalid username"
-  //     }
-  //   }
-  // }
-
-
 }

@@ -9,20 +9,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Profil szerkesztés</h1>
-    <form method="post">
-        <label>Usernév:<br>
-            <input
-                type="text"
-                name="username"
-                pattern="^[a-z][a-z\d]*$"
-            >
-        </label>
-        <% if (locals.error) { %>
-            <p><%= locals.error %></p>
-        <% } %>
-        <button type="submit">Módosítás</button>
-    </form>
 
     <table>
         <thead>
