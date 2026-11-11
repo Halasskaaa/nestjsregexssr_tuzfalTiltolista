@@ -19,15 +19,14 @@
             </tr>
         </thead>
         <tbody>
-            <% rules.array.forEach(rule => { %>
-                <tr><% rule.id %></tr>
-                <tr><% rule.priority %></tr>
-                <tr><% rule.mac %></tr>
-                <tr><% rule.enabled %></tr>
+            <% rules.forEach(rule => { %>
+                <tr>
+                    <td><%= rule.priority %></td>
+                    <td><%= rule.mac %></td>
+                    <td><%= rule.enabled %></td>                    
+                </tr>
             <% }); %>
         </tbody>
     </table>
-
-
 </body>
 </html>

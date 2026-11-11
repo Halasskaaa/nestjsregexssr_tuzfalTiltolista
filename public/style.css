@@ -1,8 +1,94 @@
+/* CSS-ek a W3school-tól */
 body {
-    background-color: rgb(232, 219, 202);
+    background-color: rgb(189, 188, 219);
     color:rgb(58, 46, 135);
 }
 
-label {
-    display: block;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: rgb(136, 194, 241);}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #2804aa;
+  color: white;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+button {
+background-color: #4404aa; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 8px; 
+transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+background-color: #024d8a; 
+transform: scale(1.05);
+}
+
+.container {
+width: 100%;
+max-width: 600px;
+margin: auto;
+padding: 20px;
+background-color: rgb(207, 204, 209);
 }
