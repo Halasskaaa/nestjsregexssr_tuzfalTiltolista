@@ -29,7 +29,7 @@ export class AppService {
 
   async newBlocklist(priority: number, mac: string, enabled: boolean ) {
     const [results] = await mysqlConnection.execute(
-      'INSERT INTO jatekok (nev) VALUES (?)',
+      'INSERT INTO blobklist (nev) VALUES (?)',
       [priority, mac, enabled]
     )
     const rows = results as any;
