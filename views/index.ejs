@@ -14,9 +14,14 @@
     <div class="container">
         <form method="post">
             <h2>Új szabály</h2>
-            <input type="number" name="priority" placeholder="priority">
-            <input type="text" name="mac" placeholder="mac">
-            <input type="number" name="enabled" placeholder="enabled"> <br><br>
+            <input type="number" name="priority" placeholder="priority" min="1" max="10">
+            <input type="text" name="mac" placeholder="mac" pattern="[a-z.A-Z0-9]{2}:[a-z.A-Z0-9]{2}:[a-z.A-Z0-9]{2}:[a-z.A-Z0-9]{2}:[a-z.A-Z0-9]{2}:[a-z.A-Z0-9]{2}" required>
+
+            <select name="enabled" id="enabled">
+                <option value="0">❌</option>
+                <option value="1">✅</option>
+            </select>
+
             <button>Add</button>
         </form>
 
